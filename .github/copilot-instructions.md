@@ -10,10 +10,8 @@ particularly in the context of BizDevOps.
 - **Java 21**: JDK Version für die Anwendungsentwicklung
 - **Quarkus 3.23.0**: Cloud Native Java Framework
 - **Gradle**: Build-Tool für das Projekt
-- **Hibernate ORM mit Panache**: ORM (Object-Relational Mapping) Framework
 - **REST mit Jakarta RESTful Web Services**: REST API Entwicklung
 - **Jackson**: JSON Verarbeitung für REST APIs
-- **PostgreSQL**: Relationaler Datenbank-Connector
 - **JUnit 5**: Testing-Framework
 - **REST Assured**: Test-Framework für REST APIs
 - **Docker**: Containerisierung der Anwendung
@@ -50,4 +48,16 @@ particularly in the context of BizDevOps.
 - Use JUnit 5 for unit testing and REST Assured for API testing.
 - Ensure that tests cover both positive and negative scenarios.
 - Run tests regularly to ensure code quality and functionality.
-- Use GitHub Actions for continuous integration to automate testing.´
+- Use GitHub Actions for continuous integration to automate testing.
+
+### Build and Deployment
+- Use Gradle as the build tool for the project.
+- Ensure that the build process is automated and reproducible.
+
+```shell script
+# You can run your application in dev mode that enables live coding using:
+./gradlew quarkusDev
+
+# The application can be packaged using
+./gradlew build
+```
