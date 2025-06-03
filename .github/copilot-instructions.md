@@ -8,7 +8,7 @@ particularly in the context of BizDevOps.
 
 ### Technology Stack
 - **Java 21**: JDK Version für die Anwendungsentwicklung
-- **Quarkus 3.23.0**: Cloud Native Java Framework
+- **Quarkus 3.23.0 or newer**: Cloud Native Java Framework
 - **Gradle**: Build-Tool für das Projekt
 - **REST mit Jakarta RESTful Web Services**: REST API Entwicklung
 - **Jackson**: JSON Verarbeitung für REST APIs
