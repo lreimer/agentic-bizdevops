@@ -9,4 +9,8 @@ public class Configuration {
 
     public static final String MASTER_PASSWORD = "change_me";
 
+    // Privater Konstruktor, da die Klasse nur statische Elemente enthält
+    private Configuration() {
+        // Verhindert Instanziierung
+    }
 }
