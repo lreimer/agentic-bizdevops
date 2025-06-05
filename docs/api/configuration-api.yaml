@@ -1,0 +1,58 @@
+openapi: 3.0.3
+info:
+  title: Configuration API
+  description: API für die Verwaltung von Konfigurationselementen
+  version: 1.0.0
+paths:
+  /api/configurations:
+    get:
+      summary: Alle Konfigurationen abrufen
+      description: Gibt eine Liste aller Konfigurationselemente zurück
+      operationId: getAllConfigurations
+      responses:
+        '200':
+          description: Erfolgreiche Abfrage
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Configuration'
+  /api/configurations/{key}:
+    get:
+      summary: Konfiguration nach Schlüssel abrufen
+      description: Gibt ein Konfigurationselement anhand des Schlüssels zurück
+      operationId: getConfigurationByKey
+      parameters:
+        - name: key
+          in: path
+          description: Konfigurationsschlüssel
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Erfolgreiche Abfrage
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Configuration'
+        '404':
+          description: Konfiguration nicht gefunden
+components:
+  schemas:
+    Configuration:
+      type: object
+      required:
+        - key
+        - value
+      properties:
+        key:
+          type: string
+          description: Der eindeutige Schlüssel des Konfigurationselements
+        value:
+          type: string
+          description: Der Wert des Konfigurationselements
+        description:
+          type: string
+          description: Optionale Beschreibung des Konfigurationselements
