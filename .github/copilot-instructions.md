@@ -30,6 +30,15 @@ particularly in the context of BizDevOps.
 - Ensure that the code is compatible with the latest versions of dependencies.
 - Follow security best practices, especially when handling user input or sensitive data.
 
+### Version Control
+- Use Git for version control.
+- Commit changes regularly with meaningful commit messages.
+- Use branches for new features or bug fixes.
+- Create pull requests for code reviews of branches before merging into the main branch.
+- Use descriptive branch names that reflect the feature or bug being addressed.
+- Ensure that the main branch is always in a deployable state.
+- Use tags to mark releases or significant milestones in the project.
+
 ### Documentation
 - Maintain clear and up-to-date documentation for the project.
 - Use Markdown for README files and other documentation.
