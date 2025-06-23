@@ -32,6 +32,19 @@
             "env": {
                 "SONAR_TOKEN": "${input:sonar_token}"
             }
-        }        
+        },
+        "flux-operator-mcp":{
+            "command":"flux-operator-mcp",
+            "args":["serve"],
+            "env":{
+                "KUBECONFIG":"/Users/mario-leander.reimer/.kube/config"
+            }
+        },
+        "gcloud": {
+            "command": "/Users/mario-leander.reimer/Applications/gcp-mcp-server",
+            "args": ["--transport", "stdio"],
+            "env": {
+            }
+        }
     }
 }
