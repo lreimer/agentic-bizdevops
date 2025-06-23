@@ -8,6 +8,7 @@ see https://github.com/github/github-mcp-server
 
 ```
 Which GitHub issues are currently assigned to me in this project?
+Please start working on GitHub Issue #9.
 ```
 
 ## Google Cloud MCP Server
