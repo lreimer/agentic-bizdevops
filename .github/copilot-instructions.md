@@ -59,7 +59,7 @@ particularly in the context of BizDevOps.
 - Run tests regularly to ensure code quality and functionality.
 - Use GitHub Actions for continuous integration to automate testing.
 
-### Build and Deployment
+### Build
 - Use Gradle as the build tool for the project.
 - Ensure that the build process is automated and reproducible.
 
@@ -70,3 +70,9 @@ particularly in the context of BizDevOps.
 # The application can be packaged using
 ./gradlew build
 ```
+
+### Deployment
+- The application can be deployed to a Kubernetes cluster.
+- We use Flux as a GitOps tool for deployment.
+- We use Kustomize for managing Kubernetes manifests.
+- The manifests are located in the `infra/application/` directory.
